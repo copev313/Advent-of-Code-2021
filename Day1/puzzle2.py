@@ -9,21 +9,17 @@ from puzzle1 import read_input, count_increases
 
 def create_sliding_windows(input_lines: list[int],
                            group_of: int) -> list[int]:
-    """Creates sliding window lists of size 'group_of'."""
-    windows = []
-    for i in range(len(input_lines) - (group_of - 1)):
-        # Group into a list of lists:
-        grouped = input_lines[i:i + group_of]
-        windows.append(grouped)
+    """Creates sliding window lists of size 'group_of'. """
+    # Define our range of indices:
+    range_span = range(len(input_lines) - (group_of - 1))
+    # Create a list of sublists using a list comprehension:
+    windows = [input_lines[i:i + group_of] for i in range_span]
     return windows
 
 
-def find_list_sums(windows: list[list[int]]) -> list[int]:
-    """Finds the sum of each list in a list of lists."""
-    sums = []
-    for window in windows:
-        sums.append(sum(window))
-    return sums
+def find_list_sums(windows_list: list[list[int]]) -> list[int]:
+    """Finds the sum of each list in a list of lists. """
+    return [sum(window) for window in windows_list]
 
 
 # Find our answer...
