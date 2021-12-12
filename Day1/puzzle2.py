@@ -7,8 +7,6 @@ increases from the previous sum.
 from puzzle1 import read_input, count_increases
 
 
-
-
 def create_sliding_windows(input_lines: list[int],
                            group_of: int) -> list[int]:
     """Creates sliding window lists of size 'group_of'."""
@@ -29,7 +27,7 @@ def find_list_sums(windows: list[list[int]]) -> list[int]:
 
 
 # Find our answer...
-input_lines = read_input('Day1/input.txt')
+input_lines = read_input('Day1/day1-input.txt')
 sliding_windows = create_sliding_windows(input_lines, 3)
 window_sums = find_list_sums(sliding_windows)
 num_increases = count_increases(window_sums)

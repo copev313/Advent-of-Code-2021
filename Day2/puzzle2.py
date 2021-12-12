@@ -7,7 +7,7 @@ position and depth you would have after following the planned course.
 Question: What do you get if you multiply your final horizontal position
 by your final depth?
 """
-from puzzle1 import parse_input, get_depth, get_horizontal_position
+from puzzle1 import parse_input
 
 
 def calc_with_aim(data: list[tuple]) -> dict:

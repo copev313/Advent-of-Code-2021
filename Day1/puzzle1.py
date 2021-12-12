@@ -26,7 +26,7 @@ def count_increases(input_list: list[int]) -> int:
 
 
 # Find out answer...
-input_lines = read_input('Day1/input.txt')
+input_lines = read_input('Day1/day1-input.txt')
 num_increases = count_increases(input_lines)
 
 print("\nDAY 1\n-----")
