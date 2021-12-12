@@ -12,14 +12,14 @@ from puzzle1 import parse_input
 
 def calc_with_aim(data: list[tuple]) -> dict:
     """Calculate submarine's position with the third tracking value: aim.
-    
+
     Conditions:
     - down X increases your aim by X units.
     - up X decreases your aim by X units.
     - forward X does two things:
         + It increases your horizontal position by X units.
         + It increases your depth by your aim multiplied by X.
-    
+
     Returns
     -------
     dict: {'depth': int, 'hpos': int}
@@ -43,7 +43,7 @@ def calc_with_aim(data: list[tuple]) -> dict:
 
 
 # Find our answer...
-parsed_input = parse_input('Day2/input.txt')
+parsed_input = parse_input('Day2/day2-input.txt')
 calculated_with_aim = calc_with_aim(parsed_input)
 depth = calculated_with_aim['depth']
 hpos = calculated_with_aim['hpos']

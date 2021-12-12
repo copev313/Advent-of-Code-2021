@@ -50,7 +50,7 @@ def get_horizontal_position(data: list[tuple]) -> int:
 
 
 # Find our answer...
-parsed_input = parse_input('Day2/input.txt')
+parsed_input = parse_input('Day2/day2-input.txt')
 depth = get_depth(parsed_input)
 hpos = get_horizontal_position(parsed_input)
 
