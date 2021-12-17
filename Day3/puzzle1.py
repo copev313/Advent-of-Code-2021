@@ -38,7 +38,7 @@ def find_gamma_rate(binary_input: list[str]) -> str:
     # Iterate through the bit positions:
     for i in range(value_length):
         num_ones, num_zeroes = 0, 0
-        
+
         # Iterate through the list of values:
         for value in binary_input:
             if value[i] == '1':
@@ -88,7 +88,7 @@ gamma = int(bin_gamma, 2)                # 394
 bin_epsilon = find_epsilon_rate(bin_gamma)  # 0b111001110101
 epsilon = int(bin_epsilon, 2)               # 3701
 
-
+# Print our results to the console:
 print("\nDAY 3\n-----")
 print("Part One:")
 print(f"Gamma binary: {bin_gamma}")
